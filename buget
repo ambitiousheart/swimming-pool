@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+const float PI=3.1415927;
+const float FP=2.17;
+const float AP=5.48;
+class Radium{
+public:
+Circle (float r);
+float circumference();
+float area();
+~Radium(){}
+private;
+float radius;
+}:
+Circle::Circle(float r){
+radius=r;
+}
+float Circle::circumference(){
+return 2*PI*radius;
+}
+float Circle::area(){
+return PI*radius*radius;
+}
+int main(){
+float radius;
+cout<<"Enter the radius of the pool: "<<endl;
+cin>>radius;
+Circle pool(radius);
+Circle poolRim(radius+3);
+float FC=poolRim.circumference*FP;
+cout<<"Fencing cost is $"<<FC<<endl;
+float AC=pool.area*AP;
+cout<<"Area cost is $"<<AC<<endl;
+}
