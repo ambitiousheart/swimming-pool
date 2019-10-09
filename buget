@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 const float PI=3.1415927;
-const float FP=2.17;
-const float AP=5.48;
+const float F_P=2.17;
+const float A_P=5.48;
 class Radium{
 public:
 Circle (float r);
@@ -27,8 +27,8 @@ cout<<"Enter the radius of the pool: "<<endl;
 cin>>radius;
 Circle pool(radius);
 Circle poolRim(radius+3);
-float FC=poolRim.circumference*FP;
+float FC=poolRim.circumference()*F_P;
 cout<<"Fencing cost is $"<<FC<<endl;
-float AC=pool.area*AP;
+float AC=pool.area()*A_P;
 cout<<"Area cost is $"<<AC<<endl;
 }
